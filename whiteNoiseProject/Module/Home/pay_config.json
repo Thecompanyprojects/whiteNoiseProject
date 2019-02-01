@@ -1,0 +1,51 @@
+{
+    "subscribe": {
+        "title": "GET VIP",
+        "sub_title1": " Unlock all functions",
+        "sub_title2": " Unlock all sounds",
+        "sub_title3": " New sounds update daily",
+        "title_font": 20,
+        "title_alpha": 1,
+        "title_color": "333333",
+        "sub_title_color": "333333",
+        "pay_btn_text_notvip": "Get VIP 3-day free trial\nAfter Free-trial:$4.99/week",
+        "pay_btn_text_vip": "Subscribed",
+        "subscribed_price": "After Free-trial:$4.99/week",
+        "subscribe_payment_id": "whitenoise_vip_week",
+        "subscribe_ids": [{
+            "title": "Get VIP 3-day free trial",
+            "sub_title": "After Free-trial:$4.99/week",
+            "btn_title": "Start Free Trial",
+            "pay_id":"white.noise.subscription.4.99w"
+        },
+        {
+            "title": "Get VIP for one month",
+            "sub_title": "",
+            "btn_title": "$15.99/Month",
+            "pay_id":"white.noise.subscription.15.99m"
+        },
+        {
+            "title": "Get VIP for one year",
+            "sub_title": "",
+            "btn_title": "$99.99/Year",
+            "pay_id":"white.noise.subscription.99.99y"
+        }
+        ],
+        "instructions_text": "Premium Account gives you unlimited access to future prediction, daily exclusive contents and Ads-free experience:\nWeekly subscription: 3-day free trial, then $4.99 per week.\nMonthly subscription:  $15.99 per month.\nAnnual subscription:  $99.99 per year.\n* Premium membership offers auto-renewing subscription plan.\n* Payment will be charged to iTunes Account at confirmation of purchase.\n* The subscription auto-renews at the end of each week, unless auto-renew is turned off at least 24-hours before the end of the current period.\n* Your iTunes Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal.\n* You can manage your subscription and auto-renewal may be turned off by going to your iTunes Account Settings after purchase.\n* You cannot cancel the current subscription during the active subscription period.\n* Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription, where applicable.\n* By subscribing our premium features. you agree to our Privacy Policy & Term of Service:",
+        "pay_btn_text_font": 15,
+        "restore_btn_alpha": 1,
+        "restore_btn_color": "333333",
+        "restore_btn_title": "Restore\nPuchases",
+        "terms_of_services": "https://sites.google.com/view/white-noise-tos/",
+        "privacy_policy": "https://sites.google.com/view/white-noise-pp/",
+        "instructions_alpha": 1,
+        "instructions_color": "333333",
+        "pay_btn_text_alpha": 1,
+        "pay_btn_text_color": "FFFFFF",
+        "privacy_policy_title": "Privacy Policy",
+        "subscribe_enter_show": 1,
+        "subscribed_price_alpha": 0,
+        "subscribed_price_color": "333333",
+        "terms_of_services_title": "Terms of Service"
+    }
+}

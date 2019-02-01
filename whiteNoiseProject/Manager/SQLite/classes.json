@@ -1,0 +1,40 @@
+{
+    "classes": [{
+                "classIconUrl": "yu icon",
+                "classIndex": 0,
+                "argb": "#4d45fa91",
+                "classId": 2,
+                "className_en": "Rain",
+                "className_zh": "雨"
+                }, {
+                "classIconUrl": "ziran icon",
+                "classIndex": 1,
+                "argb": "#4d5e6dfe",
+                "classId": 3,
+                "className_en": "Natural",
+                "className_zh": "自然"
+                },
+               {
+                "classIconUrl": "mingxiang icon",
+                "classIndex": 3,
+                "argb": "#4dad54f9",
+                "classId": 5,
+                "className_en": "Meditation",
+                "className_zh": "冥想"
+                }, {
+                "classIconUrl": "shuimian icon",
+                "classIndex": 4,
+                "argb": "#4de956ff",
+                "classId": 6,
+                "className_en": "Sleep",
+                "className_zh": "睡眠"
+                }, {
+                "classIconUrl": "custom",
+                "classIndex": 5,
+                "argb": "#4d5e6dfe",
+                "classId": 7,
+                "className_en": "Custom",
+                "className_zh": "自定义"
+                }],
+     "code": 1
+}

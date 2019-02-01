@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5dB-sz-sZt" customClass="LeftAppPurchaseView" customModule="whiteNoiseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="314"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huiyuan zuanshi" translatesAutoresizingMaskIntoConstraints="NO" id="oag-2e-lLu">
+                    <rect key="frame" x="53" y="0.0" width="109" height="96"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CET VIP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFO-ES-0fK">
+                    <rect key="frame" x="76.5" y="104" width="62" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Unlock all functions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGT-e9-qWu">
+                    <rect key="frame" x="15" y="145" width="146" height="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Unlock all sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhE-UR-0HR">
+                    <rect key="frame" x="15" y="173" width="131.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- New sounds update daily" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2S-sm-s9p">
+                    <rect key="frame" x="15" y="201" width="185" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgL-pB-deb">
+                    <rect key="frame" x="15" y="235" width="185" height="50"/>
+                    <state key="normal" title="START FREE TRIAL" backgroundImage="anniu"/>
+                    <connections>
+                        <action selector="clickPayBtn:" destination="5dB-sz-sZt" eventType="touchUpInside" id="Y50-R8-wyY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="N2S-sm-s9p" firstAttribute="top" secondItem="bhE-UR-0HR" secondAttribute="bottom" constant="10" id="C49-oI-Qf4"/>
+                <constraint firstItem="bhE-UR-0HR" firstAttribute="top" secondItem="hGT-e9-qWu" secondAttribute="bottom" constant="10" id="EUE-Rd-fss"/>
+                <constraint firstAttribute="trailing" secondItem="AgL-pB-deb" secondAttribute="trailing" constant="15" id="EsE-oF-Q31"/>
+                <constraint firstItem="QFO-ES-0fK" firstAttribute="centerX" secondItem="oag-2e-lLu" secondAttribute="centerX" id="FJK-ac-u2v"/>
+                <constraint firstAttribute="trailing" secondItem="N2S-sm-s9p" secondAttribute="trailing" constant="15" id="H4z-26-ZbL"/>
+                <constraint firstItem="N2S-sm-s9p" firstAttribute="leading" secondItem="5dB-sz-sZt" secondAttribute="leading" constant="15" id="HyT-AT-oK4"/>
+                <constraint firstItem="oag-2e-lLu" firstAttribute="top" secondItem="5dB-sz-sZt" secondAttribute="top" id="J5A-zT-jAv"/>
+                <constraint firstItem="AgL-pB-deb" firstAttribute="leading" secondItem="5dB-sz-sZt" secondAttribute="leading" constant="15" id="RQV-DL-8cs"/>
+                <constraint firstItem="bhE-UR-0HR" firstAttribute="leading" secondItem="5dB-sz-sZt" secondAttribute="leading" constant="15" id="Sfx-8c-0LF"/>
+                <constraint firstItem="hGT-e9-qWu" firstAttribute="leading" secondItem="5dB-sz-sZt" secondAttribute="leading" constant="15" id="UPD-cI-53d"/>
+                <constraint firstItem="hGT-e9-qWu" firstAttribute="top" secondItem="QFO-ES-0fK" secondAttribute="bottom" constant="20" id="VLC-XF-dYs"/>
+                <constraint firstItem="QFO-ES-0fK" firstAttribute="top" secondItem="oag-2e-lLu" secondAttribute="bottom" constant="8" id="kcK-mV-lrb"/>
+                <constraint firstItem="oag-2e-lLu" firstAttribute="centerX" secondItem="5dB-sz-sZt" secondAttribute="centerX" id="ky2-yp-KQK"/>
+                <constraint firstAttribute="bottom" secondItem="AgL-pB-deb" secondAttribute="bottom" constant="29" id="nur-wd-DL2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImage" destination="oag-2e-lLu" id="tbe-8D-1us"/>
+                <outlet property="payBtn" destination="AgL-pB-deb" id="yeI-w3-It3"/>
+                <outlet property="subTitleA" destination="hGT-e9-qWu" id="Isp-ht-GT0"/>
+                <outlet property="subTitleB" destination="bhE-UR-0HR" id="lP6-ET-JHW"/>
+                <outlet property="subTitleC" destination="N2S-sm-s9p" id="dq4-p5-plA"/>
+                <outlet property="title" destination="QFO-ES-0fK" id="FLP-O0-Wbt"/>
+            </connections>
+            <point key="canvasLocation" x="-40.5" y="-599"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="anniu" width="345" height="50"/>
+        <image name="huiyuan zuanshi" width="109" height="96"/>
+    </resources>
+</document>

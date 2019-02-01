@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="r0j-np-4IP" customClass="MusicPlayerCircleView" customModule="XToolWhiteNoiseIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页背景图模糊" translatesAutoresizingMaskIntoConstraints="NO" id="107-k8-tMf" userLabel="BackImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdO-Ai-XKF" userLabel="BackImageTopView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvJ-l6-0Q1" userLabel="CircleView">
+                    <rect key="frame" x="82.5" y="70" width="210" height="210"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bofangyuan" translatesAutoresizingMaskIntoConstraints="NO" id="Tnr-dW-gE6">
+                            <rect key="frame" x="0.0" y="0.0" width="210" height="210"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weiba" translatesAutoresizingMaskIntoConstraints="NO" id="Ajk-Na-HdF">
+                            <rect key="frame" x="0.0" y="0.0" width="210" height="210"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="9R9-UL-KNF"/>
+                        <constraint firstAttribute="height" constant="210" id="ezb-0s-ih1"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOn-m1-Zm0" userLabel="LikeButton">
+                    <rect key="frame" x="157" y="517" width="60" height="60"/>
+                    <state key="normal" image="custom_collect"/>
+                    <connections>
+                        <action selector="clickLikeBtn:" destination="r0j-np-4IP" eventType="touchUpInside" id="2cS-zW-IPx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuZ-2f-gya" userLabel="PlayButton">
+                    <rect key="frame" x="157" y="517" width="60" height="60"/>
+                    <state key="normal" image="zantingzhong"/>
+                    <connections>
+                        <action selector="clickPlayBtn:" destination="r0j-np-4IP" eventType="touchUpInside" id="Y5G-tx-GZr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrB-Hb-s88" userLabel="CircleBtn">
+                    <rect key="frame" x="82.5" y="70" width="210" height="210"/>
+                    <connections>
+                        <action selector="clickCDBtn:" destination="r0j-np-4IP" eventType="touchUpInside" id="Jmy-0A-BJm"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="progess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buH-rE-5p4">
+                    <rect key="frame" x="156.5" y="185.5" width="62" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16S-XL-oQ5" userLabel="Downloading">
+                    <rect key="frame" x="137.5" y="144.5" width="100" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--:--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6c-8d-pe4" userLabel="TimeLabel">
+                    <rect key="frame" x="147" y="158" width="81" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MrB-Hb-s88" firstAttribute="height" secondItem="wvJ-l6-0Q1" secondAttribute="height" id="0s7-Ho-jMn"/>
+                <constraint firstItem="ZOn-m1-Zm0" firstAttribute="centerY" secondItem="DuZ-2f-gya" secondAttribute="centerY" id="1C7-4X-NQ8"/>
+                <constraint firstItem="CdO-Ai-XKF" firstAttribute="trailing" secondItem="7QK-1w-r6V" secondAttribute="trailing" id="3zf-Zl-YBN"/>
+                <constraint firstItem="107-k8-tMf" firstAttribute="top" secondItem="r0j-np-4IP" secondAttribute="top" id="A6R-0P-61h"/>
+                <constraint firstItem="CdO-Ai-XKF" firstAttribute="top" secondItem="r0j-np-4IP" secondAttribute="top" id="Ato-Yp-u2l"/>
+                <constraint firstItem="107-k8-tMf" firstAttribute="leading" secondItem="7QK-1w-r6V" secondAttribute="leading" id="Cxg-Lt-Gan"/>
+                <constraint firstItem="ZOn-m1-Zm0" firstAttribute="centerX" secondItem="CdO-Ai-XKF" secondAttribute="centerX" id="Gor-3R-Klw"/>
+                <constraint firstItem="CdO-Ai-XKF" firstAttribute="leading" secondItem="7QK-1w-r6V" secondAttribute="leading" id="Msf-hf-0E4"/>
+                <constraint firstItem="DuZ-2f-gya" firstAttribute="centerX" secondItem="CdO-Ai-XKF" secondAttribute="centerX" id="Nkz-Ab-hnb"/>
+                <constraint firstItem="MrB-Hb-s88" firstAttribute="centerY" secondItem="wvJ-l6-0Q1" secondAttribute="centerY" id="Ntx-68-4PS"/>
+                <constraint firstItem="MrB-Hb-s88" firstAttribute="width" secondItem="wvJ-l6-0Q1" secondAttribute="width" multiplier="1:1" id="PA1-s1-AQN"/>
+                <constraint firstItem="buH-rE-5p4" firstAttribute="centerX" secondItem="16S-XL-oQ5" secondAttribute="centerX" id="R4p-bf-d8h"/>
+                <constraint firstItem="16S-XL-oQ5" firstAttribute="centerY" secondItem="MrB-Hb-s88" secondAttribute="centerY" constant="-20" id="X32-sO-i7j"/>
+                <constraint firstItem="107-k8-tMf" firstAttribute="trailing" secondItem="7QK-1w-r6V" secondAttribute="trailing" id="YG7-1X-pOQ"/>
+                <constraint firstItem="16S-XL-oQ5" firstAttribute="centerX" secondItem="MrB-Hb-s88" secondAttribute="centerX" id="eg0-gr-uDq"/>
+                <constraint firstItem="MrB-Hb-s88" firstAttribute="centerX" secondItem="wvJ-l6-0Q1" secondAttribute="centerX" id="f7k-pO-Fqy"/>
+                <constraint firstItem="wvJ-l6-0Q1" firstAttribute="top" secondItem="7QK-1w-r6V" secondAttribute="top" constant="50" id="hvg-8b-8Uh"/>
+                <constraint firstItem="CdO-Ai-XKF" firstAttribute="bottom" secondItem="r0j-np-4IP" secondAttribute="bottom" id="jET-3r-pUo"/>
+                <constraint firstItem="buH-rE-5p4" firstAttribute="top" secondItem="16S-XL-oQ5" secondAttribute="bottom" constant="20" id="rh4-Xa-70p"/>
+                <constraint firstItem="wvJ-l6-0Q1" firstAttribute="centerX" secondItem="CdO-Ai-XKF" secondAttribute="centerX" id="vYO-K8-gQn"/>
+                <constraint firstItem="7QK-1w-r6V" firstAttribute="bottom" secondItem="DuZ-2f-gya" secondAttribute="bottom" constant="90" id="vsG-SU-Kqv"/>
+                <constraint firstItem="107-k8-tMf" firstAttribute="bottom" secondItem="r0j-np-4IP" secondAttribute="bottom" id="zf1-qt-S3Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="7QK-1w-r6V"/>
+            <connections>
+                <outlet property="backImageMaskView" destination="CdO-Ai-XKF" id="U8o-fW-ivr"/>
+                <outlet property="backImageView" destination="107-k8-tMf" id="jwe-yR-UwY"/>
+                <outlet property="circle" destination="Tnr-dW-gE6" id="px2-2C-dFJ"/>
+                <outlet property="circleTopConstraint" destination="hvg-8b-8Uh" id="MPO-MZ-Vna"/>
+                <outlet property="circleView" destination="wvJ-l6-0Q1" id="3JK-AZ-bXb"/>
+                <outlet property="countDown" destination="A6c-8d-pe4" id="RP8-5g-CcA"/>
+                <outlet property="downloadTip" destination="16S-XL-oQ5" id="QLO-3t-B7Q"/>
+                <outlet property="likeBtn" destination="ZOn-m1-Zm0" id="Hlr-6m-ZxU"/>
+                <outlet property="likeBtnConstraint" destination="Gor-3R-Klw" id="lln-la-Ejx"/>
+                <outlet property="playBtn" destination="DuZ-2f-gya" id="bfo-IA-7Zx"/>
+                <outlet property="playBtnConstraint" destination="Nkz-Ab-hnb" id="rmD-I9-TwY"/>
+                <outlet property="progessLabel" destination="buH-rE-5p4" id="XSW-N9-JY3"/>
+                <outlet property="tail" destination="Ajk-Na-HdF" id="BWn-wR-dJY"/>
+            </connections>
+            <point key="canvasLocation" x="-148.5" y="-236.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bofangyuan" width="212" height="212"/>
+        <image name="custom_collect" width="60" height="60"/>
+        <image name="weiba" width="212" height="212"/>
+        <image name="zantingzhong" width="60" height="60"/>
+        <image name="首页背景图模糊" width="1125" height="2001"/>
+    </resources>
+</document>
